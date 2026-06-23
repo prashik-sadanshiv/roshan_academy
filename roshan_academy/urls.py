@@ -21,13 +21,14 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('courses.urls')),
-    path('accounts/', include('accounts.urls')),
-    path('payments/', include('payments.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    # path('', include('courses.urls')),
+    # path('accounts/', include('accounts.urls')),
+    # path('payments/', include('payments.urls')),
+]
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-# Custome admin branding
-admin.site.site_header = 'Roshan Academy Admin'
-admin.site.site_title  = 'Roshan Academy'
-admin.site.index_title = 'Dashboard'
+# # Custome admin branding
+# admin.site.site_header = 'Roshan Academy Admin'
+# admin.site.site_title  = 'Roshan Academy'
+# admin.site.index_title = 'Dashboard'
